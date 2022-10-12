@@ -11,7 +11,7 @@ let isFound = false;
 for (let i = 0; i < randomMail.length; i++){
     const checkMail = randomMail[i];
 
-    if(checkMail === userMail){
+    if(checkMail.toLocaleLowerCase() === userMail.toLocaleLowerCase()){
         isFound = true;
     }
     console.log(userMail, checkMail, isFound);
